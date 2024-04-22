@@ -8,20 +8,18 @@
 <body>
     <h2>another one</h2>
     <p>Paragraph</p>
-    <p id="demo"></p>
-    <p id="demo2"></p>
-    <p id="demo3"></p>
-    <p id="demo4"></p>
+    <p id="demo">demo</p>
+    <p id="demo2">demo2</p>
+    <p id="demo3">demo3</p>
+    <p id="demo4">demo4</p>
 </body>
 <script>
-    let a = 3.15;
-    let b = 13.5;
-    let c = 1;
-    let d = 11;
-    document.getElementById("demo").innerHTML = a + b;
-    document.getElementById("demo2").innerHTML = b + c;
-    document.getElementById("demo3").innerHTML = c + d;
-    document.getElementById("demo4").innerHTML = d + a;
-
+    let mynumber = 2;
+    let txt = "";
+    while (mynumber != Infinity ) { 
+        mynumber = mynumber * mynumber;
+        txt = txt + mynumber + "<br>"
+    }
+    document.getElementById("demo").innerHTML = txt;
 </script>
 </html>
