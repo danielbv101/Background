@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== OVERLAY ===== */
+#modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+
+    pointer-events: none;
+}
+
+#modal-overlay > * {
+    pointer-events: all;
+}
+
+/* ===== MODAL BASE ===== */
+.modal {
+    width: min(500px, 90%);
+    max-height: 90vh;
+
+    background-color: #fff;
+    border: 2px solid #d89a9e;
+    border-radius: 20px;
+    padding: 20px;
+
+    color: #32465d;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    overflow-y: auto;
+}
+
+/* ===== HEADER ===== */
+.modal__header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal__close {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ===== ÍCONES SÓ DO MODAL ===== */
+.modal .material-symbols-outlined {
+    padding: 5px;
+    border-radius: 50%;
+    color: #32465d;
+    transition: 0.2s;
+}
+
+.modal .material-symbols-outlined:hover {
+    background-color: #d89a9e;
+}
+
+/* ===== TÍTULO ===== */
+.modal__title {
+    font-size: 2.1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ===== FORM ===== */
+.modal__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal__field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* inputs isolados */
+.modal__form input {
+    padding: 7px;
+    width: 100%;
+    border: 2px solid #32465d;
+    border-radius: 5px;
+    background-color: #ffd6d6;
+    color: #32465d;
+}
+
+.modal__form input:focus {
+    outline: 2px solid #32465d;
+    outline-offset: 2px;
+}
+
+/* ===== BOTÃO ===== */
+.modal__actions {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: 0.2s;
+}
+
+.btn--primary {
+    background-color: #32465d;
+    color: white;
+}
+
+.btn--primary:hover {
+    background-color: #2b3c4e;
+}
