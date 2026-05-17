@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Login & Registro</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>Login / Registro</h1>
+<form method="post" action="register.php">
+<input type="text" name="fName" placeholder="Nome" required>
+<input type="text" name="lName" placeholder="Sobrenome" required>
+<input type="email" name="email" placeholder="Email" required>
+<input type="password" name="password" placeholder="Senha" required>
+<button type="submit" name="signUp">Registrar</button>
+</form>
+
+<form method="post" action="register.php">
+<input type="email" name="email" placeholder="Email" required>
+<input type="password" name="password" placeholder="Senha" required>
+<button type="submit" name="signIn">Login</button>
+</form>
+</body>
+</html>
